@@ -1,0 +1,15 @@
+<div class="grid2-1">
+    {% if SITEINFOS %}
+    <div>
+        {{ SITEINFOS }}
+    </div>
+    {% endif %}
+
+    {% if SOFTWARE %}
+    <div>
+        <p>{{ SOFTWARE }} does not meet your expectations?<br />
+        <noscript><a href="http://alternativeto.net/software/{{ SOFTWARE }}">Have a look at some alternatives</a></noscript>
+        <span id="a2itemwidget"></span></p>
+    </div>
+    {% endif %}
+</div>

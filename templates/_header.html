@@ -1,0 +1,16 @@
+<div class="grid2-1">
+    <div>
+        <h1><a href="/">
+            {% if SITELOGO %}
+                <img class="logo" src="{{ SITELOGO }}" alt="{{ SITENAME }}" />
+            {% else %}
+                {{ SITENAME }}
+            {% endif %}
+        </a></h1>
+        {% if SITESUBTITLE %}
+            <p class="tagline">
+                <a href="/">{{ SITESUBTITLE }}</a>
+            </p>
+        {% endif %}
+    </div>
+</div>
