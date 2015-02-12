@@ -1,6 +1,6 @@
 # Freshican
 
-A simple Pelican theme for freshrss.org. For instructions on how to use it, please have a look to the [freshrss.org repository](https://github.com/FreshRSS/freshrss.org).
+A simple Pelican theme for freshrss.org. For instructions on how to use it, please have a look at the [freshrss.org repository](https://github.com/FreshRSS/freshrss.org).
 
 Freshican supports additional configuration variables:
 
