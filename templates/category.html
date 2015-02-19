@@ -1,6 +1,19 @@
 {% extends "__base.html" %}
 
+{% block title %}{{ category }} – {{ super() }}{% endblock %}
+
 {% block content %}
+
+<div class="category-title"><h1>Articles from “{{ category }}”</h1></div>
+
+<div>
+    {% if CATEGORY_FEED_ATOM %}
+        <a class="icon icon-rss" href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}">Follow</a>
+    {% elif CATEGORY_FEED_RSS %}
+        <a class="icon icon-rss" href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}">Follow</a>
+    {% endif %}
+    <a class="icon icon-bracket1" href="{{ SITEURL }}/blog.html">Go back to the blog</a>
+</div>
 
 {% include '_pagination.html' %}
 
@@ -9,7 +22,6 @@
         <article>
             <h2 class="entry-title">
                 {{ article.title }}
-                <span class="entry-category">in “<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>”</span>
             </h2>
 
             <div class="entry-info">
@@ -25,8 +37,6 @@
                 {{ article.content }}
             </div>
         </article>
-    {% else %}
-        <div>Nothing has been published yet!</div>
     {% endfor %}
 </section>
 

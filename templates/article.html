@@ -5,12 +5,15 @@
 {% block content %}
 
 <div>
-    <a href="{{ SITEURL }}/blog.html">← Go back to the blog</a>
+    <a class="icon icon-bracket1" href="{{ SITEURL }}/blog.html">Go back to the blog</a>
 </div>
 
 <section class="article">
     <article>
-        <h2 class="entry-title">{{ article.title }}</h2>
+        <h2 class="entry-title">
+            {{ article.title }}
+            <span class="entry-category">in “<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>”</span>
+        </h2>
 
         <div class="entry-info">
             <span class="entry-date">

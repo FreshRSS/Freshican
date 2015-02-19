@@ -61,7 +61,7 @@ nav > ul {
 	top: 0;
 	left: 0; right: 0;
 	padding: 15px 0;
-	background: #ecf0f1;
+	background: #fff;
 	border-bottom: 1px solid #bdc3c7;
 	text-align: center;
 }
@@ -166,7 +166,12 @@ nav > ul > li > a {
 }
 
 .list-articles article {
-	margin: 0 0 25px;
+	margin: 10px 0 25px;
+}
+article .entry-category {
+	padding: 0 0 0 15px;
+	color: #777;
+	font-size: 0.7em;
 }
 article .entry-date {
 	color: #666;
