@@ -7,6 +7,7 @@ body {
 	font-family: "SourceSansPro", sans-serif;
 	font-size: 1.6em;
 	background: #ecf0f1;
+	margin: 75px 0 0;
 }
 
 a {
@@ -44,6 +45,23 @@ small {
 }
 .support {
 	text-align: center;
+}
+
+nav > ul {
+	position: fixed;
+	top: 0;
+	left: 0; right: 0;
+	padding: 15px 0;
+	background: #ecf0f1;
+	border-bottom: 1px solid #bdc3c7;
+	text-align: center;
+}
+nav > ul > li {
+	display: inline-block;
+}
+nav > ul > li > a {
+	padding: 5px 25px;
+	font-size: 1.3em;
 }
 
 .presentation {
@@ -129,6 +147,30 @@ small {
 }
 .btn.important.icon:before {
 	color: #fff;
+}
+
+.list-articles article {
+	margin: 0 0 25px;
+}
+article .entry-date {
+	color: #666;
+}
+article .entry-content {
+	padding: 25px 0;
+	font-size: 1.2em;
+}
+
+.grid3.paginator {
+	width: 250px;
+	margin: auto;
+}
+.paginator .paginator-prev a,
+.paginator .paginator-next a {
+	padding: 15px;
+	font-weight: bold;
+}
+.paginator .paginator-current span {
+	padding: 15px;
 }
 
 footer {

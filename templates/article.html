@@ -4,9 +4,19 @@
 
 {% block content %}
 
+<div>
+    <a href="{{ SITEURL }}/blog.html">← Go back to the blog</a>
+</div>
+
 <section class="article">
     <article>
         <h2 class="entry-title">{{ article.title }}</h2>
+
+        <div class="entry-info">
+            <span class="entry-date">
+                {{ article.locale_date }}
+            </span>
+        </div>
 
         <div class="entry-content">
             {{ article.content }}
