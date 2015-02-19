@@ -17,6 +17,10 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+a.icon:before,
+a.icon.after:after {
+	color: #0062BE;
+}
 
 .striped-vert tr > th:first-child {
 	background: none;
@@ -29,14 +33,9 @@ small {
 	font-size: 0.7em;
 }
 
-.icon {
-	display: inline-block;
-	width: 16px;
-	height: 16px;
-	vertical-align: middle;
-}
-.icon.i_rss {
-	background: url('rss.svg') center center no-repeat;
+.icon-rss:before,
+.icon-rss.after:after {
+	content: "\e834";
 }
 
 .header {
