@@ -118,6 +118,13 @@ nav > ul > li > a {
 	font-size: 1.4em;
 }
 
+/* Fix for hanchors */
+#presentation,
+#requirements,
+#help {
+	padding: 75px 0 0;
+}
+
 .btn {
 	display: inline-block;
 	min-height: 35px;
