@@ -29,6 +29,16 @@ small {
 	font-size: 0.7em;
 }
 
+.icon {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+.icon.i_rss {
+	background: url('rss.svg') center center no-repeat;
+}
+
 .header {
 	padding: 25px;
 }
