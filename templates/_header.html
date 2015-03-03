@@ -23,9 +23,9 @@
             <li><a href="{{ SITEURL }}/#help">Need help?</a></li>
             <li><a href="{{ SITEURL }}/blog.html">News</a></li>
             {% if FEED_ALL_ATOM %}
-                <li><a class="icon icon-rss after" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Follow us</a></li>
+                <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}"><span class="icon-feed3"></span> Follow us</a></li>
             {% elif FEED_ALL_RSS %}
-                <li><a class="icon icon-rss after" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">Follow us</a></li>
+                <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}"><span class="icon-feed3"></span> Follow us</a></li>
             {% endif %}
         </ul>
     </nav>
