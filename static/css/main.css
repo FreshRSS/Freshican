@@ -1,14 +1,23 @@
+/*
+ * Theme for freshrss.org
+ * Author: Marien Fressinaud (dev@marienfressinaud.fr)
+ */
+
+/* Fonts */
 @font-face {
 	font-family: "SourceSansPro";
 	src: url("../fonts/SourceSansPro.ttf");
 }
 
+/* Global */
 body {
 	font-family: "SourceSansPro", sans-serif;
 	font-size: 1.6em;
 	background: #ecf0f1;
+	margin: 75px 0 0;
 }
 
+/* Links */
 a {
 	color: #0062BE;
 	text-decoration: none;
@@ -17,6 +26,7 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* Tables */
 .striped-vert tr > th:first-child {
 	background: none;
 }
@@ -24,73 +34,12 @@ td {
 	background: #fafafa;
 }
 
+/* Text-specific*/
 small {
 	font-size: 0.7em;
 }
 
-.header {
-	padding: 25px;
-}
-.logo {
-	max-width: 300px;
-}
-.tagline {
-	padding: 0 0 0 80px;
-	font-size: 1.1em;
-	font-style: italic;
-}
-.tagline a:hover {
-	text-decoration: none;
-}
-.support {
-	text-align: center;
-}
-
-.presentation {
-	padding: 25px 0;
-}
-.presentation .screenshot,
-.presentation .download {
-	vertical-align: middle;
-}
-.presentation .screenshot img {
-	border: 1px solid #ddd;
-	border-radius: 5px;
-}
-.presentation .download {
-	text-align: center;
-}
-
-.overview {
-	margin: 25px 0;
-	background: #fff;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-}
-.overview .mod {
-	padding: 25px;
-	text-align: center;
-}
-
-.requirements {
-	margin: 25px 0;
-}
-
-.help {
-	margin: 25px 0;
-	padding: 25px 0;
-	background: #fff;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-}
-.help .mod {
-	padding: 0 25px;
-	text-align: center;
-}
-.help h2 {
-	font-size: 1.4em;
-}
-
+/* Buttons */
 .btn {
 	display: inline-block;
 	min-height: 35px;
@@ -131,6 +80,133 @@ small {
 	color: #fff;
 }
 
+/* Header */
+.header {
+	padding: 25px;
+}
+.logo {
+	max-width: 300px;
+}
+.tagline {
+	padding: 0 0 0 80px;
+	font-size: 1.1em;
+	font-style: italic;
+}
+.tagline a:hover {
+	text-decoration: none;
+}
+
+/* Nav bar */
+nav > ul {
+	position: fixed;
+	top: 0;
+	left: 0; right: 0;
+	padding: 15px 0;
+	background: #fff;
+	border-bottom: 1px solid #bdc3c7;
+	text-align: center;
+}
+nav > ul > li {
+	display: inline-block;
+}
+nav > ul > li > a {
+	padding: 5px 25px;
+	font-size: 1.3em;
+}
+
+/* Presentation section */
+.presentation {
+	padding: 25px 0;
+}
+.presentation .screenshot,
+.presentation .download {
+	vertical-align: middle;
+}
+.presentation .screenshot img {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+.presentation .download {
+	text-align: center;
+}
+
+.overview {
+	margin: 25px 0;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+.overview .mod {
+	padding: 25px;
+	text-align: center;
+}
+
+/* Requirements section */
+.requirements {
+	margin: 25px 0;
+}
+
+/* Help section */
+.help {
+	margin: 25px 0;
+	padding: 25px 0;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+.help .mod {
+	padding: 0 25px;
+	text-align: center;
+}
+.help h2 {
+	font-size: 1.4em;
+}
+
+/* Fix for hanchors */
+#presentation,
+#requirements,
+#help {
+	padding: 75px 0 0;
+}
+
+/* Blog section */
+.category-title a:hover {
+	text-decoration: none;
+	color: #E3702D;
+}
+
+.list-articles article {
+	margin: 10px 0 25px;
+}
+article .entry-category {
+	padding: 0 0 0 15px;
+	color: #777;
+	font-size: 0.7em;
+}
+article .entry-date,
+article .entry-permalink {
+	color: #666;
+}
+article .entry-content {
+	padding: 25px 0;
+	font-size: 1.2em;
+}
+
+/* Paginator */
+.grid3.paginator {
+	width: 250px;
+	margin: auto;
+}
+.paginator .paginator-prev a,
+.paginator .paginator-next a {
+	padding: 15px;
+	font-weight: bold;
+}
+.paginator .paginator-current span {
+	padding: 15px;
+}
+
+/* Footer */
 footer {
 	margin: 25px 0;
 	padding: 25px;
@@ -139,6 +215,7 @@ footer {
 	font-size: 0.8em;
 }
 
+/* Responsive design */
 @media handheld {
 	body {
 		background: #fff;

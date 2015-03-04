@@ -1,6 +1,6 @@
 <div class="grid2-1">
     <div>
-        <h1><a href="/">
+        <h1><a href="{{ SITEURL }}/">
             {% if SITELOGO %}
                 <img class="logo" src="{{ SITELOGO }}" alt="{{ SITENAME }}" />
             {% else %}
@@ -9,8 +9,30 @@
         </a></h1>
         {% if SITESUBTITLE %}
             <p class="tagline">
-                <a href="/">{{ SITESUBTITLE }}</a>
+                <a href="{{ SITEURL }}/">{{ SITESUBTITLE }}</a>
             </p>
         {% endif %}
     </div>
 </div>
+
+<!--
+    Note: this section of the template is specific to freshrss.org and its
+    content. It's probably not the best way to do it but I can't figure out how
+    to do it in another better way.
+-->
+<div>
+    <nav>
+        <ul>
+            <li><a href="{{ SITEURL }}/#presentation">Presentation</a></li>
+            <li><a href="{{ SITEURL }}/#requirements">Requirements</a></li>
+            <li><a href="{{ SITEURL }}/#help">Need help?</a></li>
+            <li><a href="{{ SITEURL }}/blog.html">News</a></li>
+            {% if FEED_ALL_ATOM %}
+                <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}"><span class="icon-feed3"></span> Follow us</a></li>
+            {% elif FEED_ALL_RSS %}
+                <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}"><span class="icon-feed3"></span> Follow us</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</div>
+<!-- End of the freshrss.org specific section -->
