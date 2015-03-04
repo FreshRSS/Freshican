@@ -7,3 +7,5 @@ Freshican supports additional configuration variables:
 - `SITELOGO`: a URL to a logo image file
 - `SITEINFOS`: HTML informations to put in the footer
 - `SOFTWARE`: software name, useful to add a link to [AlternativeTo](http://alternativeto.net/)
+
+Note there is a FreshRSS-specific section in the `./templates/_header.html` file. You can adapt this part to your own needs.
