@@ -12,7 +12,6 @@
         {% elif CATEGORY_FEED_RSS %}
             <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}"><span class="icon-feed3"></span></a>
         {% endif %}
-
     </h1>
 </div>
 
@@ -25,24 +24,14 @@
 <section class="list-articles">
     {% for article in articles_page.object_list %}
         <article>
-            <h2 class="entry-title">
-                {{ article.title }}
-            </h2>
-
-            <div class="entry-info">
-                <span class="entry-date">
-                    {{ article.locale_date }}
-                </span>
-                ⋅
-                <span class="entry-permalink">
-                    <span class="icon-link"></span> <a href="{{ SITEURL }}/{{ article.url }}">{{ SITEURL }}/{{ article.url }}</a>
-                </span>
-            </div>
+            {% include "_article_details.html" %}
 
             <div class="entry-content">
                 {{ article.content }}
             </div>
         </article>
+    {% else %}
+        <div>Nothing has been published yet!</div>
     {% endfor %}
 </section>
 
