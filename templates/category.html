@@ -4,15 +4,20 @@
 
 {% block content %}
 
-<div class="category-title"><h1>Articles from “{{ category }}”</h1></div>
+<div class="category-title">
+    <h1>
+        <span class="icon-pushpin"></span> Articles from “{{ category }}”
+        {% if CATEGORY_FEED_ATOM %}
+            <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}"><span class="icon-feed3"></span></a>
+        {% elif CATEGORY_FEED_RSS %}
+            <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}"><span class="icon-feed3"></span></a>
+        {% endif %}
+
+    </h1>
+</div>
 
 <div>
-    {% if CATEGORY_FEED_ATOM %}
-        <a class="icon icon-rss" href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}">Follow</a>
-    {% elif CATEGORY_FEED_RSS %}
-        <a class="icon icon-rss" href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}">Follow</a>
-    {% endif %}
-    <a class="icon icon-bracket1" href="{{ SITEURL }}/blog.html">Go back to the blog</a>
+    <a href="{{ SITEURL }}/blog.html"><span class="icon-arrow-left2"></span> Go back to the blog</a>
 </div>
 
 {% include '_pagination.html' %}
@@ -28,8 +33,9 @@
                 <span class="entry-date">
                     {{ article.locale_date }}
                 </span>
+                ⋅
                 <span class="entry-permalink">
-                    ⋅ <a href="{{ SITEURL }}/{{ article.url }}">{{ SITEURL }}/{{ article.url }}</a>
+                    <span class="icon-link"></span> <a href="{{ SITEURL }}/{{ article.url }}">{{ SITEURL }}/{{ article.url }}</a>
                 </span>
             </div>
 

@@ -9,15 +9,16 @@
         <article>
             <h2 class="entry-title">
                 {{ article.title }}
-                <span class="entry-category">in “<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>”</span>
+                <span class="entry-category"><span class="icon-pushpin"></span> in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></span>
             </h2>
 
             <div class="entry-info">
                 <span class="entry-date">
                     {{ article.locale_date }}
                 </span>
+                ⋅
                 <span class="entry-permalink">
-                    ⋅ <a href="{{ SITEURL }}/{{ article.url }}">{{ SITEURL }}/{{ article.url }}</a>
+                    <span class="icon-link"></span> <a href="{{ SITEURL }}/{{ article.url }}">{{ SITEURL }}/{{ article.url }}</a>
                 </span>
             </div>
 

@@ -5,19 +5,23 @@
 {% block content %}
 
 <div>
-    <a class="icon icon-bracket1" href="{{ SITEURL }}/blog.html">Go back to the blog</a>
+    <a href="{{ SITEURL }}/blog.html"><span class="icon-arrow-left2"></span> Go back to the blog</a>
 </div>
 
 <section class="article">
     <article>
         <h2 class="entry-title">
             {{ article.title }}
-            <span class="entry-category">in “<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>”</span>
+            <span class="entry-category"><span class="icon-pushpin"></span> in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></span>
         </h2>
 
         <div class="entry-info">
             <span class="entry-date">
                 {{ article.locale_date }}
+            </span>
+            ⋅
+            <span class="entry-permalink">
+                <span class="icon-link"></span> <a href="{{ SITEURL }}/{{ article.url }}">{{ SITEURL }}/{{ article.url }}</a>
             </span>
         </div>
 

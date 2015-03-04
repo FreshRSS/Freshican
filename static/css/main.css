@@ -165,6 +165,11 @@ nav > ul > li > a {
 	color: #fff;
 }
 
+.category-title a:hover {
+	text-decoration: none;
+	color: #E3702D;
+}
+
 .list-articles article {
 	margin: 10px 0 25px;
 }
@@ -173,7 +178,8 @@ article .entry-category {
 	color: #777;
 	font-size: 0.7em;
 }
-article .entry-date {
+article .entry-date,
+article .entry-permalink {
 	color: #666;
 }
 article .entry-content {
