@@ -15,6 +15,8 @@
         <div class="entry-content">
             {{ article.content }}
         </div>
+
+        {% include "_article_comments.html" %}
     </article>
 </section>
 {% endblock %}
