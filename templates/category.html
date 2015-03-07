@@ -8,9 +8,9 @@
     <h1>
         <span class="icon-pushpin"></span> Articles from “{{ category }}”
         {% if CATEGORY_FEED_ATOM %}
-            <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}"><span class="icon-feed3"></span></a>
+            <a class="link-icon" href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}"><span class="icon-feed3"></span></a>
         {% elif CATEGORY_FEED_RSS %}
-            <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}"><span class="icon-feed3"></span></a>
+            <a class="link-icon" href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}"><span class="icon-feed3"></span></a>
         {% endif %}
     </h1>
 </div>
