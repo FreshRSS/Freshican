@@ -7,6 +7,7 @@ Freshican supports additional configuration variables:
 - `SITELOGO`: a URL to a logo image file
 - `SITEINFOS`: HTML informations to put in the footer
 - `SOFTWARE`: software name, useful to add a link to [AlternativeTo](http://alternativeto.net/)
+- `TWITTER`: link to a Twitter account, add an icon link in the header bar
 
 You can add a link at the bottom of articles to a page which host article's comments with a `Comments_at` metadata information. For instance:
 
