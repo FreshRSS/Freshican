@@ -26,6 +26,22 @@ a:hover {
 	text-decoration: underline;
 }
 
+a.link-icon:hover {
+	text-decoration: none;
+}
+a:hover [class^="icon-feed"],
+a:hover [class*=" icon-feed"] {
+	color: #E3702D;
+}
+a:hover [class^="icon-twitter"],
+a:hover [class*=" icon-twitter"] {
+	color: #55ACEE;
+}
+a:hover [class^="icon-home"],
+a:hover [class*=" icon-home"] {
+	color: #000;
+}
+
 /* Tables */
 .striped-vert tr > th:first-child {
 	background: none;
@@ -170,11 +186,6 @@ nav > ul > li > a {
 }
 
 /* Blog section */
-.category-title a:hover {
-	text-decoration: none;
-	color: #E3702D;
-}
-
 .list-articles article {
 	margin: 10px 0 25px;
 }
