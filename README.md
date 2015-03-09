@@ -1,5 +1,7 @@
 # Freshican
 
+**IMPORTANT NOTE**: please open tickets on the [FreshRSS/freshrss.org bugtracker](https://github.com/FreshRSS/freshrss.org) for any problem or suggestion.
+
 A simple Pelican theme for freshrss.org. For instructions on how to use it, please have a look at the [freshrss.org repository](https://github.com/FreshRSS/freshrss.org).
 
 Freshican supports additional configuration variables:
