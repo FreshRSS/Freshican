@@ -1,20 +1,3 @@
-<div class="grid2-1">
-    <div>
-        <h1><a href="{{ SITEURL }}/">
-            {% if SITELOGO %}
-                <img class="logo" src="{{ SITELOGO }}" alt="{{ SITENAME }}" />
-            {% else %}
-                {{ SITENAME }}
-            {% endif %}
-        </a></h1>
-        {% if SITESUBTITLE %}
-            <p class="tagline">
-                <a href="{{ SITEURL }}/">{{ SITESUBTITLE }}</a>
-            </p>
-        {% endif %}
-    </div>
-</div>
-
 <!--
     Note: this section of the template is specific to freshrss.org and its
     content. It's probably not the best way to do it but I can't figure out how
@@ -42,3 +25,20 @@
     </nav>
 </div>
 <!-- End of the freshrss.org specific section -->
+
+<div class="grid2-1">
+    <div>
+        <h1><a href="{{ SITEURL }}/">
+            {% if SITELOGO %}
+                <img class="logo" src="{{ SITELOGO }}" alt="{{ SITENAME }}" />
+            {% else %}
+                {{ SITENAME }}
+            {% endif %}
+        </a></h1>
+        {% if SITESUBTITLE %}
+            <p class="tagline">
+                <a href="{{ SITEURL }}/">{{ SITESUBTITLE }}</a>
+            </p>
+        {% endif %}
+    </div>
+</div>
